@@ -1,3 +1,9 @@
+import Clock from "@/components/Clock";
+
 export default function HomePage() {
-  return <div>Home Page</div>;
+  return (
+    <main className="flex-center h-screen w-full">
+      <Clock serverTime={new Date()} />
+    </main>
+  );
 }
